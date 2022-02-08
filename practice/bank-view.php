@@ -22,6 +22,11 @@
         <li><?php echo $coin; ?>: <?php echo $value; ?></li>
         <?php } ?>
     </ul>
+
+    <?php if ($goal){ ?>
+    Congrats, you reached your saving goal!
+
+    <?php } ?>
 </body>
 
 

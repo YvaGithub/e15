@@ -16,6 +16,7 @@ $quarters = 34;
 $coins = [
     'pennies' => 100,
     'nickels' => 25,
+
     'dimes'   => 100,
     'quarters'=> 34,
 ];

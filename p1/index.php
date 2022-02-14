@@ -11,10 +11,9 @@
         <h1>Project 1</h1>
 
         <p>Palindrome or Not</p>
-        <p>Hint: Halloween’s favorite fruit</p>
 
         <label for='answer'>Text Entry:</label>
-        <input type='text' name='answer' id='answer'>
+        <input type='text' name='inputString' id='inputString'>
 
         <button type='submit'>Submit</button>
     </form>

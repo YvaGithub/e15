@@ -2,21 +2,21 @@
 <html lang='en'>
 
 <head>
-    <title>Project 1</title>
+    <title>Mystery Word Scramble</title>
     <meta charset='utf-8'>
 </head>
 
 <body>
     <form method='GET' action='process.php'>
-        <h1>Project 1</h1>
+        <h1>Mystery words</h1>
 
-        <p>Palindrome or Not</p>
+        <p>Mystery word: kiumppn</p>
         <p>Hint: Halloween’s favorite fruit</p>
 
-        <label for='answer'>Text Entry:</label>
+        <label for='answer'>Your guess:</label>
         <input type='text' name='answer' id='answer'>
 
-        <button type='submit'>Submit</button>
+        <button type='submit'>Check answer</button>
     </form>
 
 </body>

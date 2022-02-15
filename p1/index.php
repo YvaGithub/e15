@@ -10,7 +10,7 @@
     <form method='GET' action='process.php'>
         <h1>Project 1</h1>
 
-        <p>Palindrome or Not</p>
+        <p>Check here to see whether your word is a palindrome or not and how many vowels does it contain</p>
 
         <label for='answer'>Text Entry:</label>
         <input type='text' name='inputString' id='inputString'>

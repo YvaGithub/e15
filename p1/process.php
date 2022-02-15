@@ -3,9 +3,7 @@
 $inputString = $_GET['inputString'];
 
 $isPalindrome = Palindromecheck($inputString);
-
-require 'process-view.php';
-
+$vowelCount = NumberofVowels($inputString);
 
 function Palindromecheck($string)
 {
@@ -15,3 +13,10 @@ function Palindromecheck($string)
         return 0;
     }
 }
+// Let's count the vowels in the string
+function NumberofVowels($inputString)
+{
+    return substr_count($inputString, 'a')+substr_count($inputString, 'e')+substr_count($inputString, 'i')+substr_count($inputString, 'o')+substr_count($inputString, 'u');
+}
+
+require 'process-view.php';

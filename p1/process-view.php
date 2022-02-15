@@ -17,9 +17,10 @@
     The word is not a palindrome
     <?php } ?>
 
+    <a href='index.php'> Try another word: </a>
 
+    There are <?php echo $vowelCount; ?> vowel(s) in this word.
 
-    <a href='index.php'>Try another word...</a>
 
 </body>
 

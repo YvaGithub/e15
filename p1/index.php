@@ -1,23 +1,12 @@
-<!doctype html>
-<html lang='en'>
+<?php
+session_start();
 
-<head>
-    <title>Project 1</title>
-    <meta charset='utf-8'>
-</head>
+if (isset($_SESSION['results'])) {
+    $results = $_SESSION['results'];
 
-<body>
-    <form method='GET' action='process.php'>
-        <h1>Project 1</h1>
+    $answer = $results['inputString'];
+    $vowelCount = $results['inputString'];
 
-        <p>Check here to see whether your word is a palindrome or not and how many vowels does it contain</p>
-
-        <label for='answer'>Text Entry:</label>
-        <input type='text' name='inputString' id='inputString'>
-
-        <button type='submit'>Submit</button>
-    </form>
-
-</body>
-
-</html>
+    $_SESSION[''] = null;
+}
+require 'index-view.php';

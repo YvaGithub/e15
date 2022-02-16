@@ -1,13 +1,14 @@
 <?php
+session_start();
 
-$inputString = $_GET['inputString'];
+$inputString = $_POST['inputString'];
 
 $isPalindrome = Palindromecheck($inputString);
 $vowelCount = NumberofVowels($inputString);
 
-function Palindromecheck($string)
+function Palindromecheck($inputString)
 {
-    if (strrev($string) == $string) {
+    if (strrev($inputString) == $inputString) {
         return 1;
     } else {
         return 0;
@@ -19,4 +20,5 @@ function NumberofVowels($inputString)
     return substr_count($inputString, 'a')+substr_count($inputString, 'e')+substr_count($inputString, 'i')+substr_count($inputString, 'o')+substr_count($inputString, 'u');
 }
 
-require 'process-view.php';
+$_SESSION[''];
+header('Location: index.php');

@@ -8,6 +8,5 @@ if (isset($_SESSION['results'])) {
     $vowelCount = $results['vowelCount'];
 
     $_SESSION['results'] = null;
-
-    require 'index-view.php';
 }
+    require 'index-view.php';

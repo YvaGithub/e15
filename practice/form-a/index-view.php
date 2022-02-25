@@ -12,7 +12,7 @@
 
     <form method='POST' action='process.php'>
         <label for='inputString'>Type Your Word:</label>
-        <input type='text' name='inputString' id='inputString'>
+        <input type='text' name='inputString' id='inputString' value='<?php echo $inputString ?? "" ?>'>
         <button type='submit'>Check the result</button>
     </form>
 

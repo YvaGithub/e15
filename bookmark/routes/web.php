@@ -14,5 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    return view ('Welcome');
+});
+
+Route::get('/contact', function () {
+    return '<h1>Contact us @mailbookmark.com</h1>';
+});
+
+Route::get('/', function () {
     return '<h1>Bookmark<h1>';
 });

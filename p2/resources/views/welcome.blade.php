@@ -1,16 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts/main')
 
-        <title>Game2Play</title>
-
-        
-    </head>
-    <body>
-        <h1>Game2Play</h1>
-        <nav></nav>
-        <p>...</p>
-    </body>
-</html>
+@section('content')
+<p>Welcome to SmartBreakfastMenu. Please check back later</p>
+@endsection

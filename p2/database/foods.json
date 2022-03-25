@@ -2,6 +2,7 @@
     "the-pancake": {
         "name": "Pancake",
         "type": "breakfast",
+        "cover_url": "https://hes-bookmark.s3.amazonaws.com/the-bell-jar.jpg",
         "tags": [
             "classic"
         ],

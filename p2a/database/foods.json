@@ -1,0 +1,29 @@
+{
+    "pancakes": {
+        "name": "Pancakes"
+        },
+   "eggs-and-bacon": {
+        "name": "Eggs-and-Bacon"
+        
+        
+        },
+    "cereal": {
+        "name": "Cereal"
+        
+        
+    },
+    "french-toast": {
+        "name": "French-Toast"
+       
+        
+    },
+    "waffles": {
+        "name": "Waffles"
+                
+       },
+    "sausage": {
+        "name": "Sausage"
+       
+        
+     }
+}

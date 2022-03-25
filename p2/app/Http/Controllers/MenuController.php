@@ -7,6 +7,11 @@ use Illuminate\Support\Arr;
 
 class MenuController extends Controller
 {
+public function search(){
+    return 'Process the search form..';
+}
+
+
     public function index()
     {
         # Load book data using PHP’s file_get_contents
@@ -18,9 +23,7 @@ class MenuController extends Controller
         $foods = json_decode($foodData, true);
 
         # Alphabetize the books by title using Laravel’s Arr::sort
-        $foods = Arr::sort($foods, function ($value) {
-            return $value['name'];
-        });
+        
 
         return view('foods/index', ['foods' => $foods]);
     }

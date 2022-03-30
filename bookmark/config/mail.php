@@ -1,7 +1,8 @@
 <?php
 
 return [
-
+ 
+    'contact_email'=> 'yvl905@g.harvard.edu',
     /*
     |--------------------------------------------------------------------------
     | Default Mailer

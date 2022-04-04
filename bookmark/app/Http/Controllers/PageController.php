@@ -8,7 +8,14 @@ class PageController extends Controller
 {
     public function index(){
       $searchResults = session('searchResults', null);
-      return view('pages/welcome', ['searchResults' => $searchResults]);
+      $searchTerms = session('searchTerms', null);
+      $searchType = session('searchType', null);
+      
+      return view('pages/welcome', [
+        'searchResults' => $searchResults,
+        'searchTerms' => $searchTerms,
+        'searchType' => $searchType
+      ]);
     }
 
     public function contact(){

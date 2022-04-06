@@ -10,4 +10,3 @@ Your List
 Coming soon...
 
 @endsection
-© 2022 GitHub, Inc.

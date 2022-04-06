@@ -1,5 +1,5 @@
-<!doctype html>
-<html lang='en'>
+
+
 <head>
     <title>@yield('title', 'Bookmark')</title>
     <meta charset='utf-8'>
@@ -9,8 +9,6 @@
     <link href='/css/bookmark.css' type='text/css' rel='stylesheet'>
 
     @yield('head')
-</head>
-<body>
 
     <header>
         <a href='/'><img src='/images/bookmark-logo@2x.png' id='logo' alt='Bookmark Logo'></a>
@@ -25,13 +23,13 @@
         </nav>
     </header>
 
+    <section>
     <section id='main'>
         @yield('content')
     </section>
 
-    <footer>
+   <footer>
         &copy; Bookmark, Inc.
     </footer>
-
 </body>
 </html>

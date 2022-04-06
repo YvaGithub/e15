@@ -9,7 +9,7 @@
     <fieldset>
         <label for='searchTerms'>
             Search terms:
-            <input type='text' name='searchTerms' value='{{ $searchTerms }}'>
+            <input type='text' name='searchTerms' value='{{$searchTerms}}'>
         </label>
     </fieldset>
 

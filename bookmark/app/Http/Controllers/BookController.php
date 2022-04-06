@@ -16,7 +16,7 @@ class BookController extends Controller
         $searchResults= [];
 
         foreach ($books as $slug=> $book) {
-            if(strtolower($book[$searchType])== strtolower($searchTerms )){
+            if(strtolower($book[$searchType]) == strtolower($searchTerms )){
                 $searchResults[$slug] = $book;
             }
         }

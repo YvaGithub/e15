@@ -6,9 +6,18 @@ use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
-    public function welcome()
+    public function index()
     {
-        return view('pages/welcome');
+        $searchResults = session('searchResults', null);
+        $searchTerms = session('searchTerms', null);
+        $searchType = session('searchType', null);
+    
+        return view('pages/welcome',
+                                 [
+        'searchResults' => $searchResults,
+        'searchTerms' => $searchTerms,
+        'searchType' => $searchType
+    ]);
     }
 
     public function contact()

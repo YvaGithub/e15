@@ -10,7 +10,7 @@ Route::get('/', [PageController::class, 'index']);
 Route::get('/support', [PageController::class, 'support']);
 
 Route::get('/books', [BookController::class, 'index']);
-Route::get('/seach', [BookController::class, 'search']);
+Route::get('/search', [BookController::class, 'search']);
 
 
 Route::get('/books/{slug}', [BookController::class, 'show']);

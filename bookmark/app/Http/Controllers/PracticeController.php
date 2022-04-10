@@ -3,9 +3,22 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class PracticeController extends Controller
 {
+
+    public function practice3(){
+
+        dump(DB::select('SHOW DATABASES;'));
+    }
+
+    
+    public function practice2(){
+
+        dump(config('database'));
+    }
+    
     /**
      * First practice example
      * GET /practice/1
@@ -49,14 +62,4 @@ class PracticeController extends Controller
         }
     }
 }
- View
-/resources/views/practice.blade.php:
-
-@extends('layouts/main')
-
-@section('content')
-
-    <h1>Practice</h1>
-    @foreach($methods as $method)
-        <a href='{{ str_replace('practice', '/practice/', $method) }}'>{{ $method }}</a><br>
-    @endforeach
+ 

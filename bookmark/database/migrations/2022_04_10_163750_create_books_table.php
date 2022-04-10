@@ -18,7 +18,8 @@ return new class extends Migration
             $table->timestamps(); # created_at, updated_at
             $table->string('slug');  #VARCHAR
             $table->string('title'); #VARCHAR
-            $table->tinyInteger('published_year'); #TINYINTEGER
+            $table->string('author'); #VARCHAR
+            $table->smallInteger('published_year'); #TINYINTEGER
             $table->string('cover_url')->nullable(); #VARCHAR
             $table->string('info_url'); #VARCHAR
             $table->string('purchase_url'); #VARCHAR

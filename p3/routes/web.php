@@ -1,6 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AlumniController;
+use App\Http\Controllers\AlumniCircle;
 
-Route::get('/', [AlumniController::class, 'welcome']);
+Route::get('/', [AlumniCircle::class, 'index']);

@@ -15,7 +15,7 @@
     <header>
         <a href='/'><img src='/images/alumni-logo@2x.png' id='logo' alt='Alumni Logo'></a>
           <h1>HYDE PARK UNIVERSITY</h>
-              <h3>Alumni Circle</h3>
+              <h2>Alumni Circle</h2>
         <nav>
             <ul>
                 <li><a href='/'>Home</a></li>

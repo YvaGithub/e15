@@ -1,12 +1,9 @@
 @extends('layouts/main')
 
 @section('content')
-<p>Welcome to Bookmark. Please check back later once we add books to our library.</p>
+<p><h4>We would like to welcome back our friends and colleagues to our virtual campus. Please feel at home as we are trying to reconstruct and relive the wonderful moments we had spent together over the years.</h4></p>
 <p>
-    Welcome to Bookmark&mdash; an online book journal that lets you track and share a history of books you’ve read.
+   <h4> This is a space where former classmates and teachers can meet again to share memories. If you attended Hyde Park University, we encourage you to join us by registring yourself to our platform.</h4>
 </p>
-
-
-
 
 @endsection 

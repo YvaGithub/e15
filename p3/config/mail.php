@@ -2,6 +2,8 @@
 
 return [
 
+    'contact_email'=> 'huac@members.edu',
+
     /*
     |--------------------------------------------------------------------------
     | Default Mailer

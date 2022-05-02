@@ -14,14 +14,15 @@
 
     <header>
         <a href='/'><img src='/images/alumni-logo@2x.png' id='logo' alt='Alumni Logo'></a>
-          <h1>HYDE PARK UNIVERSITY</h>
-              <h2>Alumni Circle</h2>
+           <h1>HYDE PARK UNIVERSITY</h>
+              <h2>The Alumni Circle</h2>
         <nav>
             <ul>
                 <li><a href='/'>Home</a></li>
                 <li><a href='/members'>Members</a></li>
                 <li><a href='/about'>About Us</a></li>
                 <li><a href='/contact'>Contact</a></li>
+                <li><a href='/create'>Register</a></li>
             </ul>
         </nav>
     </header>

@@ -12,33 +12,15 @@ use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Fortify\Fortify;
 
-/*class FortifyServiceProvider extends ServiceProvider
+class FortifyServiceProvider extends ServiceProvider
 {
-/**
-* Bootstrap any application services.
-*
-* @return void
-*/
-/**public function boot()
-{
-    # Indicate what view should be used for login
-    Fortify::loginView(function () {
-        return view('auth.login');
-    });
 
-   
-    # 
-    # etc. existing code
-    # 
-
-}
-
-    /**
+ /** 
      * Register any application services.
      *
      * @return void
      */
-    /**public function register()
+    public function register()
     {
         //
     }
@@ -48,8 +30,19 @@ use Laravel\Fortify\Fortify;
      *
      * @return void
      */
-    /*public function boot()
+    public function boot()
     {
+         # Indicate what view should be used for login
+        Fortify::loginView(function () {
+        return view('auth.login');
+         }); 
+
+ # Indicate what view should be used for registration
+ Fortify::registerView(function () {
+    return view('auth.register');
+});
+
+
         Fortify::createUsersUsing(CreateNewUser::class);
         Fortify::updateUserProfileInformationUsing(UpdateUserProfileInformation::class);
         Fortify::updateUserPasswordsUsing(UpdateUserPassword::class);
@@ -66,4 +59,3 @@ use Laravel\Fortify\Fortify;
         });
     }
 }
-*/

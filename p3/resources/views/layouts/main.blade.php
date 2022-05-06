@@ -12,6 +12,12 @@
 </head>
 <body>
 
+@if(session('flash-alert'))
+   <div class= 'flash-alert'>
+   {{session('flash-alert')}}
+   </div>
+   @endif
+
     <header>
         <a href='/'><img src='/images/alumni-logo@2x.png' id='logo' alt='Alumni Logo'></a>
            <h1>HYDE PARK UNIVERSITY</h>

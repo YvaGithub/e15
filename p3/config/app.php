@@ -194,4 +194,11 @@ return [
         // 'ExampleClass' => App\Example\ExampleClass::class,
     ])->toArray(),
 
+    'providers' => [
+        # Existing providers
+    
+        # NEW:
+        App\Providers\FortifyServiceProvider::class
+    ]
+
 ];

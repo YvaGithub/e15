@@ -28,7 +28,24 @@
                 <li><a href='/members'>Members</a></li>
                 <li><a href='/about'>About Us</a></li>
                 <li><a href='/contact'>Contact</a></li>
-                <li><a href='/create'>Register</a></li>
+                <li><a href='/create'>Create member</a></li>
+
+                @if(!Auth::user())
+                <a href='/register' test='register-link'>Register</a>
+                    <a href='/login' test='login-link'>Login</a>
+                    @else
+                    <form method='POST' id='logout' action='/logout'>
+                        {{ csrf_field() }}
+
+                        {{-- 
+                        Codeception can’t invoke our JavaScript so instead of a link thta acts as a submit button, we'll use a button that's styled like a link to submit this form.
+                        <a href='#' onClick='document.getElementById("logout").submit();'>Logout</a> --}}
+
+                        <button type='submit' class='button-link' test='logout-button'>
+                            Logout
+                        </button>
+                    </form>
+                    @endif
             </ul>
         </nav>
     </header>

@@ -21,14 +21,20 @@ return new class extends Migration
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
+
+            $table->string('first_name'); #VARCHAR
+            $table->string('last_name'); #VARCHAR
+            $table->smallInteger('attendance_year'); #SMALLINTEGER
+            $table->string('phone_number'); #STRING
+            $table->text('profile'); #TEXT
         });
     }
 
-    
-     #Reverse the migrations.
-     #*
-     @return void
+    /**
+     Reverse the migrations.
      
+     @return void
+    */ 
     public function down()
     {
         Schema::dropIfExists('users');

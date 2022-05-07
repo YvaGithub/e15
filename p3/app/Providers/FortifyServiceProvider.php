@@ -14,8 +14,7 @@ use Laravel\Fortify\Fortify;
 
 class FortifyServiceProvider extends ServiceProvider
 {
-
- /** 
+    /**
      * Register any application services.
      *
      * @return void
@@ -32,17 +31,16 @@ class FortifyServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-         # Indicate what view should be used for login
+        # Indicate what view should be used for login
         Fortify::loginView(function () {
-        return view('auth.login');
-         }); 
+            return view('auth.login');
+        });
 
- # Indicate what view should be used for registration
- Fortify::registerView(function () {
-    return view('auth.register');
-});
-
-
+        # Indicate what view should be used for registration
+        Fortify::registerView(function () {
+            return view('auth.register');
+        });
+    
         Fortify::createUsersUsing(CreateNewUser::class);
         Fortify::updateUserProfileInformationUsing(UpdateUserProfileInformation::class);
         Fortify::updateUserPasswordsUsing(UpdateUserPassword::class);

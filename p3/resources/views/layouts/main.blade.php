@@ -28,7 +28,6 @@
                 <li><a href='/members'>Members</a></li>
                 <li><a href='/about'>About Us</a></li>
                 <li><a href='/contact'>Contact</a></li>
-                <li><a href='/create'>Create member</a></li>
 
                 @if(!Auth::user())
                 <a href='/register' test='register-link'>Register</a>

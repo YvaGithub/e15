@@ -32,18 +32,18 @@ class UsersTableSeeder extends Seeder
     {
         $user = new User();
         $user->created_at = $this->faker->dateTimeThisMonth();
-        $user->updated_at = $book->created_at;
+        $user->updated_at = $user->created_at;
         $user->first_name = 'Jill';
         $user->last_name = 'Harvard';
         $user->attendance_year = 2002;
         $user->email = 'jill@harvard.edu';
-        $users->phone_number = 6179999999;
+        $users->phone_number = 6179999998;
         $user->profile = 'I am Jill Harvard and I am an alumi at the university. I graduated from Hyde Park University in the Spring of 2002...';
         $user->save();
    
         $user = new User();
         $user->created_at = $this->faker->dateTimeThisMonth();
-        $user->updated_at = $book->created_at;
+        $user->updated_at = $user->created_at;
         $user->first_name = 'Jamal';
         $user->last_name = 'Harvard';
         $user->attendance_year = 2000;

@@ -19,13 +19,26 @@ class UsersTableSeeder extends Seeder
         # Note the use of the `updateOrCreate` Eloquent method
         # This is useful here because the email for each user has to be unique
         $user = User::updateOrCreate(
-            ['email' => 'jill@harvard.edu', 'name' => 'Jill Harvard'],
-            ['password' => Hash::make('asdfasdf')
+            [
+            'email' => 'jill@harvard.edu', 
+            'first_name' => 'Jill', 
+            'last_name' => 'Harvard', 
+            'attendance_year' => 2002, 
+            'phone_number' => 6179999998,
+            'profile' => 'I am Jill Harvard and I am an alumi at the university. I graduated from Hyde Park University in the Spring of 2002...',
+            'password' => Hash::make('asdfasdf')
         ]);
         
         $user = User::updateOrCreate(
-            ['email' => 'jamal@harvard.edu', 'name' => 'Jamal Harvard'],
-            ['password' => Hash::make('asdfasdf')
+           [
+            'email' => 'jamal@harvard.edu', 'first_name' => 'Jamal', 'last_name' => 'Harvard',
+            'first_name' => 'Jill', 
+            'last_name' => 'Harvard', 
+            'attendance_year' => 2002, 
+            'phone_number' => 6179999999,
+            'profile' => 'I am Jamal Harvard and I am an alumi at the university. I graduated from Hyde Park University in the Spring of 2002...',
+
+            'password' => Hash::make('asdfasdf')
         ]);
     }
     private function addOneUserook()

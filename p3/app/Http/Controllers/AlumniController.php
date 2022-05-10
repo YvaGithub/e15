@@ -33,7 +33,7 @@ class AlumniController extends Controller {
         $user->phone_number = $request->phone_number;
         $user->profile = $request->profile;
         $user->save();
-
+ 
         return redirect ('/register')->with(['flash-alert' =>'Welcome new member! Make yourself at home!']);
 
     }
@@ -59,7 +59,7 @@ class AlumniController extends Controller {
        return view('members/about');
     }
 
-    public function edit(Request $request, $slug)
+    public function edit(Request $request, $email)
     {
         $user = User::where('email', '=', $email)->first();
 
@@ -76,13 +76,13 @@ class AlumniController extends Controller {
     /**
     * PUT /books
     */
-    public function update(Request $request, $slug)
+    public function update(Request $request, $email)
     {
-        $book = User::where('email', '=', $email)->first();
+        $user = User::where('email', '=', $email)->first();
 
         $request->validate([
         'first_name' => 'required',
-        'last_name' => 'required|unique:books,slug,' . $user->id . '|alpha_dash',
+        'last_name' => 'required',
         'attendance_year' => 'required|digits:4',
         'email' => 'required',
         'phone_number' => 'required|digits:10',
@@ -99,7 +99,7 @@ class AlumniController extends Controller {
         
         $user->save();
 
-        return redirect('/books/'.$email.'/edit')->with(['flash-alert' => 'Your changes were saved.']);
+        return redirect('/members/'.$email.'/edit')->with(['flash-alert' => 'Your changes were saved.']);
     }
 
 

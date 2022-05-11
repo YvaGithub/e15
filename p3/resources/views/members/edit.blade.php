@@ -7,7 +7,8 @@ Edit User {{ $user->email }}
 @section('content')
 
 <h1>Edit</h1>
-<h2>{{ $user->email }}</h2>
+<h2>{{ $user->first_name }}</h2>
+<h2>{{ $user->last_name }} </h2>
 
 <form method='POST' action='/members/{{ $user->email }}'>
     <div class='details'>* Required fields</div>
@@ -17,8 +18,7 @@ Edit User {{ $user->email }}
     <label for='first_name'>* First Name</label>
     <input type='text' name='first_name' id='first_name' test='first_name-input' value='{{ old('first_name', $user->first_name) }}'>
     <div class='details'>
-        This is is a unique URL identifier for the book, containing only alphanumeric characters and dashes.
-        <br>It’s suggested that the slug be based on the book title, e.g. a good slug for the book <em>“War and Peace”</em> would be <em>“war-and-peace”</em>.
+        
     </div>
     @include('includes/error-field', ['fieldName' => 'first_name'])
 

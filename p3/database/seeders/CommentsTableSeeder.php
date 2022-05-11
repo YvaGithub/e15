@@ -20,32 +20,15 @@ class CommentsTableSeeder extends Seeder
         # https://fakerphp.github.io
     $this->faker = Factory::create();
 
-    # Array of author data to add
-    $comments = [
-        ['Jill', 'Harvard'],
-        ['Jamal', 'Harvard'],
-        
-    ];
-
-    $count = count($comments);
-
-    # Loop through each comment, adding them to the database
     foreach ($comments as $commentData) {
+        
+
         $comment = new Comment();
-        
-        $comment->created_at = $this->faker->dateTimeThisMonth();
-        $comment->updated_at = $this->faker->dateTimeThisMonth();
-        $comment->first_name = $commentData[0];
-        $comment->attendance_year = $commentData[1];
-        $comment->email = $commentData[0];
-        $comment->phone_number= $commentData[1];
-        $comment->profile = $commentData[0];
-        
-        
-        
+        $comment->user_id = $request->user()->id;
+        $comment->user_id_recipient = $request->user_id_recipient;
+        $comment->comment = $request->comment;
         $comment->save();
-        
-        $count--;
+
     }
     }
 }

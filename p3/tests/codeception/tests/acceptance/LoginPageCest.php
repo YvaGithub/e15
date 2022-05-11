@@ -10,11 +10,16 @@ class LoginPageCest
     public function pageLoads(AcceptanceTester $I)
     {     #Action
          $I->amOnPage('/login');
+         
 
           #Asserts
          $I->see('Home');
          $I->seeElement('#email');
-        
+         $I->amOnPage('/Logout', 'nav');
+         
+
+         
 
     }
+
 }
